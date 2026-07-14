@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Node/Frontend
+node_modules/
+dist/
+.output/
+.vite/
+
+# Docker/Ambiente
+.env
+.env.local
+.env.*.local
+
+# Sistemas
+.DS_Store
+Thumbs.db
