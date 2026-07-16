@@ -1,22 +1,45 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-.venv/
-env/
-venv/
-
-# Node/Frontend
+# =========================
+# Node / Vite / Frontend
+# =========================
 node_modules/
 dist/
-.output/
-.vite/
+dist-ssr/
+*.local
 
-# Docker/Ambiente
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================
+# Python / Backend / IA
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# =========================
+# Ambiente e Segredos
+# =========================
 .env
-.env.local
-.env.*.local
+.env.*
 
-# Sistemas
+# =========================
+# Editor / Sistema Operacional
+# =========================
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
 Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

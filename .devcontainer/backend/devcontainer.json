@@ -1,0 +1,17 @@
+{
+  "name": "DarkSword Backend",
+  "dockerComposeFile": [
+    "../../docker/docker-compose.yml",
+    "../../docker/docker-compose.override.yml"
+  ],
+  "service": "backend",
+  "workspaceFolder": "/app/backend",
+  "postCreateCommand": "pip install -r requirements.txt --break-system-packages",
+  "postStartCommand": "uvicorn app:app --host 0.0.0.0 --port 8000 --reload",
+  "forwardPorts": [8000],
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-python.debugpy"]
+    }
+  }
+}

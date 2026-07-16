@@ -1,0 +1,44 @@
+services:
+  frontend:
+    container_name: darksword-frontend-rag
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.frontend
+      target: development
+    volumes:
+      - ../app/frontend:/app/frontend
+    ports:
+      - "5173:5173"
+    working_dir: /app/frontend
+    command: sh -c "npm install && npm run dev --host"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5173"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    restart: unless-stopped
+
+  backend:
+    container_name: darksword-backend-rag
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.backend
+      target: development
+    volumes:
+      - ../app/backend:/app/backend
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      frontend:
+        condition: service_started
+    tty: true
+    stdin_open: true
+    command: sleep infinity
+    restart: unless-stopped
