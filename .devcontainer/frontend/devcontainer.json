@@ -1,5 +1,5 @@
 {
-  "name": "DarkSword Frontend",
+  "name": "Nox Sword Frontend",
   "dockerComposeFile": ["../../docker/docker-compose.yml"],
   "service": "frontend",
   "workspaceFolder": "/app/frontend",

@@ -1,5 +1,5 @@
 {
-  "name": "DarkSword Backend",
+  "name": "Nox Sword Backend",
   "dockerComposeFile": [
     "../../docker/docker-compose.yml",
     "../../docker/docker-compose.override.yml"
