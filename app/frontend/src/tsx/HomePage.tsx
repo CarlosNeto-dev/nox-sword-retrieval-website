@@ -1,4 +1,4 @@
-import '../scss/style.scss'
+import '../scss/index.scss'
 import Layout from './components/Layout'
 import FunctionalitySection from './components/sections/FunctionalitySection'
 import HistorySection from './components/sections/HistorySection'

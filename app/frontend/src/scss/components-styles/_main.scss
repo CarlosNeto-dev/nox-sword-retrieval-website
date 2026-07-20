@@ -1,0 +1,18 @@
+// ============================================================
+// LAYER: scss/components-styles
+// FILE: _main.scss
+// PURPOSE: Styles the main tag that wraps all page sections
+// DEPENDS ON: abstracts/variables (colors, fonts)
+// ============================================================
+
+.nox-main {
+  display: grid;
+  grid-template-areas: 
+  "hero-section"
+  "history-section"
+  "functionality-section"
+  "retrieval-section";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-area: nox-main;
+}

@@ -1,0 +1,19 @@
+// ============================================================
+// LAYER: scss(root)
+// FILE: index.scss
+// PURPOSE: Aggregates all other SCSS partials into a single
+//          entry point, imported once by the app (HomePage.tsx)
+// ============================================================
+
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'base/reset';
+@use 'base/typography';
+@use 'components-styles/header';
+@use 'components-styles/footer';
+@use 'components-styles/main';
+@use 'components-styles/layout';
+@use 'sections/functionality';
+@use 'sections/hero';
+@use 'sections/history';
+@use 'sections/retrieval';

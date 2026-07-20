@@ -1,0 +1,12 @@
+// ============================================================
+// LAYER: scss/components-styles
+// FILE: _footer.scss
+// PURPOSE: Styles the footer, including contact information & 
+//          social media links
+// DEPENDS ON: abstracts/variables (colors, fonts)
+// ============================================================
+
+.nox-footer {
+  background: pink;
+  grid-area: nox-footer;
+}

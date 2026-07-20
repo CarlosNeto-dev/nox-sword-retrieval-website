@@ -1,0 +1,20 @@
+// ============================================================
+// LAYER: scss/base
+// FILE: _reset.scss
+// PURPOSE: Removes default browser spacing (margin/padding) and
+//          sets box-sizing to border-box across all elements.
+//          Also sets the root font-size to 62.5%, so that 1rem
+//          equals 10px — makes rem-based sizing easier to reason about.
+// ============================================================
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}

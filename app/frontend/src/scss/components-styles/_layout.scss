@@ -1,0 +1,18 @@
+// ============================================================
+// LAYER: scss/components-styles
+// FILE: _layout.scss
+// PURPOSE: Styles the .app-wrapper div in Layout.tsx — the
+//          outermost container that holds Header, main, and
+//          Footer together
+// DEPENDS ON: abstracts/variables (colors, fonts)
+// ============================================================
+
+.nox-wrapper {
+  display: grid;
+  grid-template-areas: 
+  "nox-header nox-main"
+  "nox-footer nox-footer";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+}

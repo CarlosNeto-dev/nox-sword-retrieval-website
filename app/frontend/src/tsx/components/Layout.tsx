@@ -15,11 +15,11 @@ function Layout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <div className='nox-wrapper'>
       <Header />
-      <main>{children}</main>
+      <main className='nox-main'>{children}</main>
       <Footer />
-    </>
+    </div>
   )
 }
 

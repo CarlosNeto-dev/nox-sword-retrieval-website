@@ -1,0 +1,59 @@
+// ============================================================
+// LAYER: scss/base
+// FILE: _typography.scss
+// PURPOSE: Styles main typography of Nox Sword Website
+// DEPENDS ON: abstracts/variables (colors, fonts)
+// ============================================================
+
+@use '../abstracts/variables';
+
+body {
+  font-family: variables.$font-body;
+  background-color: variables.$background-color;
+  color: variables.$text-color;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: variables.$font-heading;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h4, h5, h6 {
+  font-family: variables.$font-body;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(3rem, 3.5vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(2.5rem, 3vw, 4rem);
+}
+
+h3 {
+  font-size: clamp(2.25rem, 2.75vw, 3.75rem);
+}
+
+h4 {
+  font-size: clamp(1.75rem, 2.25vw, 3.25rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+h6 {
+  font-size: clamp(1.25rem, 1.75vw, 2.75rem);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

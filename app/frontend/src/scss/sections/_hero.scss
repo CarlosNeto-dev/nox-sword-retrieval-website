@@ -1,0 +1,11 @@
+// ============================================================
+// LAYER: scss/sections
+// FILE: _hero.scss
+// PURPOSE: Styles the "Genesis" section — the main section that
+//          introduces the Nox Sword with fantastic detail
+// ============================================================
+
+.nox-hero-section {
+  background: rgb(80, 82, 76);
+  grid-area: hero-section;
+}

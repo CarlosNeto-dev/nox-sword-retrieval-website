@@ -11,8 +11,8 @@
  */
 function Footer() {
   return (
-    <footer>
-      <p>Footer</p>
+    <footer className="nox-footer">
+      Footer
     </footer>
   )
 }
